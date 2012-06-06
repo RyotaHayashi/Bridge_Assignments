@@ -6,7 +6,7 @@ require 'sinatra'
 # Produce result displayed.
 get '/' do
 
-	file = "data/test.json"
+	file = "views/test.json"
 	data = open(file).read
 	vals = JSON.parse(data)
     
